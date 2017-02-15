@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+    background: url("../img/love.jpg") no-repeat 0 0;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.clock {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    border: 17px solid white;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    padding: 20px;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+.hand {
+    position: absolute;
+    top: 50%;
+    width: 40%;
+    height: 6px;
+    background: #000;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: all 0.05s;
+    transition-timing-function: cubic-bezier(0.1, 0.35, 0.46, 1.01);
+}
